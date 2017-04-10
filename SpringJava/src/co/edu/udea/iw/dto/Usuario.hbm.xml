@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2017 01:20:21 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="co.edu.udea.iw.dto.Usuario" table="usuarios">
+        <id name="Login" type="java.lang.String"> <!-- Nombre del atributo de la clase -->
+            <column name="LOGIN" /> <!-- Nombre de la columna -->
+            <generator class="assigned" /><!-- Como se va a generar la clave primaria -->
+        </id>
+        <property name="Nombres" type="java.lang.String"><!-- Columna que no es clave primaria -->
+            <column name="NOMBRES" length="50" not-null="true" />
+            <!-- Atributo length sirve para que hibernate intercepte 
+            antes de llegar a la base de datos, se utiliza
+             precision para los que no son string y si es decimal 
+             se usa scale para ver cuantos decimales soporta-->
+        </property>
+        <property name="Apellidos" type="java.lang.String">
+            <column name="APELLIDOS" length="50" not-null="true"/>
+                 </property>
+             <property name="Contrasena" type="java.lang.String">
+            <column name="CONTRASENA" length="10" not-null="true"/>
+              </property>
+             <many-to-one class="co.edu.udea.iw.dto.Rol" name="rol">
+             <column name="ROL" length="3" not-null="true"/>
+             </many-to-one>
+
+    </class>
+</hibernate-mapping>

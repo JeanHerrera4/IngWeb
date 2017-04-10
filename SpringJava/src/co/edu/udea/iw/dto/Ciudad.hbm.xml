@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2017 01:20:21 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="co.edu.udea.iw.dto.Ciudad" table="ciudades">
+        <id name="codigo" type="java.lang.Long"> <!-- Nombre del atributo de la clase -->
+            <column name="CODIGO" /> <!-- Nombre de la columna -->
+            <generator class="assigned" /><!-- Como se va a generar la clave primaria -->
+        </id>
+        <property name="Nombre" type="java.lang.String"><!-- Columna que no es clave primaria -->
+            <column name="NOMBRE" length="50" not-null="true" />
+            <!-- Atributo length sirve para que hibernate intercepte 
+            antes de llegar a la base de datos, se utiliza
+             precision para los que no son string y si es decimal 
+             se usa scale para ver cuantos decimales soporta-->
+        </property>
+        <property name="CodigoArea" type="java.lang.String">
+            <column name="CODIGOAREA" />
+        </property>
+    </class>
+</hibernate-mapping>

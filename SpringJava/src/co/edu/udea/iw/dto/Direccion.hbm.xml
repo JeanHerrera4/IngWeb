@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2017 01:21:09 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="co.edu.udea.iw.dto.Direccion" table="direccion">
+	
+		<composite-id name="id" class="co.edu.udea.iw.dto.DireccionId"> <!-- Nombre del atributo en la clase -->
+
+			<key-property name="codigo" type="java.lang.Long">
+				<column name="Codigo" length="12" not-null="true" ></column>
+			</key-property>
+			
+			<key-many-to-one name="cliente" class="co.edu.udea.iw.dto.Cliente" >
+				<column name="Cliente" length="15" not-null="true"></column>
+			</key-many-to-one>
+			
+		</composite-id>
+		
+		<property name="direccion" type="java.lang.String">
+			<column name="Direccion" length="120" not-null="true" />
+		</property>
+		<property name="telefono" type="java.lang.String">
+			<column name="telefono" length="45" not-null="true" />
+		</property>
+		
+		<many-to-one class="co.edu.udea.iw.dto.Ciudad" name="ciudad">
+			<column name="Ciudad" length="12" not-null="true"/>
+		</many-to-one>
+		
+		<property name="preferida" type="java.lang.Boolean">
+			<column name="Preferida" length="1" />
+		</property>
+	
+	</class>
+</hibernate-mapping>
