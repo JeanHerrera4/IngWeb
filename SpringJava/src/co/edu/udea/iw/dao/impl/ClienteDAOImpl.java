@@ -59,6 +59,26 @@ public class ClienteDAOImpl implements ClienteDAO {
 		return clientes;
 	}
 
+	/**
+	* @param Cédula del cliente que se desea obtener
+	* @return El cliente en base a la cédula pasada por parametro 
+	* @throws MyException
+	*/	
+	@Override
+	public Cliente obtener(String cedula) throws MyException {
+
+	Cliente cliente= new Cliente();
+	Session session = null;
+		try{
+			session = sessionFactory.getCurrentSession();
+			cliente = (Cliente) session.get(Cliente.class,cedula);
+		}
+		catch(HibernateException e)
+		{
+			throw new MyException("Error consultando clientes", e);
+		}
+		return cliente;
+	}
 
 	@Override
 	public void guardar(Cliente cliente) throws MyException {

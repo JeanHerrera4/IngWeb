@@ -27,7 +27,7 @@ import co.edu.udea.iw.exception.MyException;
 @Transactional
 @ContextConfiguration(locations="classpath:configuratioSpring.xml")
 
-public class UsuarioDaoImplTest {
+public class UsuarioDAOImplTest {
 	
 	@Autowired
 	UsuarioDAO usuarioDAO;

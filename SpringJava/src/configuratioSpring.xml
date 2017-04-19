@@ -38,8 +38,21 @@
 		<property name="sessionFactory" ref="sessionFactory"></property>
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>
-	<bean id="ciudadDAO" class="co.edu.udea.iw.dao.impl.CiudadDAOImpl">
+	
+	<bean name="ciudadDAO" class="co.edu.udea.iw.dao.impl.CiudadDAOImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
-
+	
+	<bean name="clienteDAO" class="co.edu.udea.iw.dao.impl.ClienteDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean name="usuarioDAO" class="co.edu.udea.iw.dao.impl.UsuarioDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean name="clienteLn" class="co.edu.udea.iw.ln.ClienteLn">
+		<property name="clienteDAO" ref="clienteDAO"></property>
+		<property name="usuarioDAO" ref="usuarioDAO"></property>
+	</bean>
 </beans>

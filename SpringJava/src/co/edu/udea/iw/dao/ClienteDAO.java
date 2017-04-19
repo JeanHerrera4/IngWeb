@@ -27,4 +27,6 @@ public interface ClienteDAO {
 	 * @throws MyException
 	 */
 	public void guardar(Cliente cliente) throws MyException;
+	
+	public Cliente obtener(String cedula) throws MyException;
 }

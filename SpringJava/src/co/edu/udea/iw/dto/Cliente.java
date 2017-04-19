@@ -3,7 +3,7 @@
  */
 package co.edu.udea.iw.dto;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.Set;
 
 /**
