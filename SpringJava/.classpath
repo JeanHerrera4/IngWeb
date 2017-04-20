@@ -27,5 +27,16 @@
 	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/Documentos/SpringJava/Librerias/Spring4/spring-tx-4.1.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/Documentos/SpringJava/Librerias/Spring4/spring-web-4.1.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/Documentos/SpringJava/Librerias/mysql-connector-java-5.1.22-bin.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/IngWeb/SpringJava/Librerias/jersey-archive-1.4/jersey-archive-1.4/lib/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/IngWeb/SpringJava/Librerias/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-core-asl-1.5.5.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/IngWeb/SpringJava/Librerias/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-jaxrs-1.5.5.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/IngWeb/SpringJava/Librerias/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-mapper-asl-1.5.5.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/IngWeb/SpringJava/Librerias/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-xc-1.5.5.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/IngWeb/SpringJava/Librerias/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-client-1.4.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/IngWeb/SpringJava/Librerias/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-core-1.4.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/IngWeb/SpringJava/Librerias/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-json-1.4.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/IngWeb/SpringJava/Librerias/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-server-1.4.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/IngWeb/SpringJava/Librerias/jersey-archive-1.4/jersey-archive-1.4/lib/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/Jean.herrera/IngWeb/SpringJava/Librerias/jersey-archive-1.4/jersey-archive-1.4/lib/jsr311-api-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
