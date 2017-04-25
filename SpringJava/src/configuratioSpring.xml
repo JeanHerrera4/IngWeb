@@ -55,4 +55,6 @@
 		<property name="clienteDAO" ref="clienteDAO"></property>
 		<property name="usuarioDAO" ref="usuarioDAO"></property>
 	</bean>
+	
+	<context:component-scan base-package="co.edu.udea.iw.ws"></context:component-scan>
 </beans>

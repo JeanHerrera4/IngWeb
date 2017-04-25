@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="IngWeb">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClaseX/test"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/JerseyJava/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClaseX/src"/>
+        <property name="context-root" value="IngWeb"/>
+        <property name="java-output-path" value="/IngWeb/bin"/>
+    </wb-module>
+</project-modules>

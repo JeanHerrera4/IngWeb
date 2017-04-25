@@ -3,6 +3,7 @@
 	<name>JerseyJava</name>
 	<comment></comment>
 	<projects>
+		<project>SpringJava</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
