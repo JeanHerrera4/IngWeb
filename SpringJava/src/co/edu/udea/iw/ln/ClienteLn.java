@@ -3,12 +3,15 @@ package co.edu.udea.iw.ln;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import co.edu.udea.iw.dao.ClienteDAO;
 import co.edu.udea.iw.dto.Cliente;
 import co.edu.udea.iw.dto.Usuario;
 import co.edu.udea.iw.exception.MyException;
 import co.edu.udea.iw.dao.UsuarioDAO;
 
+@Transactional
 public class ClienteLn {
 	
 	private ClienteDAO ClienteDAO;

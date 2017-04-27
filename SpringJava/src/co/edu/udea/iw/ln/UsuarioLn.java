@@ -2,8 +2,12 @@ package co.edu.udea.iw.ln;
 
 import co.edu.udea.iw.dto.Usuario;
 import co.edu.udea.iw.exception.MyException;
+
+import org.springframework.transaction.annotation.Transactional;
+
 import co.edu.udea.iw.dao.UsuarioDAO;
 
+@Transactional
 public class UsuarioLn {
 	
 	private UsuarioDAO UsuarioDAO;

@@ -56,5 +56,10 @@
 		<property name="usuarioDAO" ref="usuarioDAO"></property>
 	</bean>
 	
+	<bean name="usuarioLn" class="co.edu.udea.iw.ln.UsuarioLn">
+		<property name="usuarioDAO" ref="usuarioDAO"></property>
+	</bean>
+	
+	<tx:annotation-driven/>
 	<context:component-scan base-package="co.edu.udea.iw.ws"></context:component-scan>
 </beans>

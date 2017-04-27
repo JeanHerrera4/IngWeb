@@ -42,7 +42,7 @@ public class ClienteDAOImpl implements ClienteDAO {
 
 	@Override
 	public List<Cliente> obtener() throws MyException {
-		List<Cliente> clientes = new ArrayList<>();
+		List<Cliente> clientes = new ArrayList<Cliente>();
 		Session session = null;
 		Criteria criteria = null;
 		
