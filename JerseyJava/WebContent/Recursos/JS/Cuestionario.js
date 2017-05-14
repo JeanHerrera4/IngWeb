@@ -51,12 +51,11 @@ cuestionario.controller('contCuestionario', function($scope){
 				$scope.respuestasCorrectas++;
 				$scope.preguntas[i].estado = 'ok';
 			}else{
-			if($scope.preguntas[i].estado == 'ok' && $scope.respuestasCorrectas > 0)
-				$scope.respuestasCorrectas--;
-
 				$scope.preguntas[i].estado = 'error';
 			}
 		}
+
+		estadoUsuario();
 	};
 
 	function estadoUsuario(){
