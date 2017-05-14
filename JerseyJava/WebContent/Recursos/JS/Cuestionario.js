@@ -62,7 +62,7 @@ cuestionario.controller('contCuestionario', function($scope){
 		var total = $scope.respuestasCorrectas/$scope.preguntas.length;
 
 		if (total == 0){
-			$scope.estadoUsuario = 'Looser';
+			$scope.estadoUsuario = 'looser';
 		}else if(total == 1){
 			$scope.estadoUsuario = 'guru';
 		}else{
